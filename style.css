@@ -118,6 +118,11 @@ nav ul li a {
     background-clip: border-box;
 }
 
+.products .prod-list-top .bg-silver:hover {
+    background-color: rgb(34, 50, 225);
+    background-clip: border-box;
+}
+
 
 /* Footer Social logos */
 .share-text {
