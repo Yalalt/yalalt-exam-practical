@@ -114,8 +114,9 @@ nav ul li a {
 
 /* Background baga zereg saaral */
 .products .prod-list-top {
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(246, 246, 246);
     background-clip: border-box;
+    border-radius: 20px;
 }
 
 .products .prod-list-top .bg-silver:hover {
