@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 1920px;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo-samsung {
+    background: url(images/logo-samsung-med.png);
+    width: 140px;
+    height: 20.83px;
+}
+
+.solid-black {
+    top: 0px;
+    border-bottom: 1px solid balck;
+}
+.solid-black::after {
+    top: 10px;
+    border-bottom: 1px solid balck;
+}
+.solid-black {
+    border-bottom: 1px solid balck;
+}
+
+.big-showcase {
+    width: 100%;
+    height: 1080px;
+}
+
+.banner-trend-products {
+    display: flex;
+    width: 100%;
+}
+
+.banner-trend-products .left-side-prod {
+    background: url(images/left-side-baaner.jpg) no-repeat center center/cover;
+    width: 864px;
+    height: 486px;
+}
+
+.banner-trend-products .right-side-prod {
+    background: url(images/right-side-banner.jpg) no-repeat center center/cover;
+    width: 864px;
+    height: 486px;
+}
+
+.products .medium-title {
+    font-size: 2rem;
+    font-weight: 600;
+    line-height: 3rem;
+}
+
+.products .prod-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.products .prod-list .phones {
+    height: 480px;
+}
