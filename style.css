@@ -60,6 +60,7 @@ nav ul li a {
     background: url(images/banner-image-big.jpg);
     width: 100%;
     height: 1080px;
+    position: relative;
 }
 
 .big-showcase .big-title {
@@ -71,6 +72,21 @@ nav ul li a {
 
 .big-showcase .big-title:hover {
     color: cornflowerblue;
+}
+
+/* Doosh zaasan sum */
+.arrow-down-btn {
+    background: url(images/showcase-button.png);
+    width: 48px;
+    height: 48px;
+    position:absolute;
+    right: 20px;
+    bottom: 50px;
+    z-index: 1;
+}
+
+.arrow-down-btn:hover {
+    background: url(images/arrow-down-btn-hover.png);
 }
 
 
@@ -103,7 +119,7 @@ nav ul li a {
 .medium-title-white {
     font-size: 30px;
     font-weight: 600;
-    line-height: 2rem;
+    line-height: 38px;
     padding: 30px;
     margin: 0;
     color: #fff;
@@ -119,12 +135,18 @@ nav ul li a {
 
 .products .prod-list,
 .products .prod-list-top {
+    position: relative;
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
-.products .prod-list .phones-card {
+.products .prod-list .phones-card,
+.products .prod-list-top .phones-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     height: 480px;
     width: 480px;
 }
@@ -133,14 +155,25 @@ nav ul li a {
 .products .prod-list-top {
     background-color: rgb(246, 246, 246);
     background-clip: border-box;
-    border-radius: 20px;
 }
 
 .products .prod-list-top .bg-silver:hover {
-    background-color: rgb(34, 50, 225);
+    background-color: rgb(141, 94, 236);
     background-clip: border-box;
 }
 
+.products .phone-names {
+    position: absolute;
+    font-size: 23px;
+    line-height: 35px;
+    font-weight: 600;
+    color: #000;
+    bottom: 10px;
+}
+
+.products .prod-list-top .bg-silver:hover .phone-names {
+    color: #fff;
+}
 
 /* Footer Social logos */
 .share-text {
@@ -150,6 +183,7 @@ nav ul li a {
 }
 
 .share-social {
+    margin-top: 50px;
     display: flex;
     align-items: center;
     color: #333;
